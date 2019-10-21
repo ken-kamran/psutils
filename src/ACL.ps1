@@ -1,0 +1,1 @@
+Get-ADGroupMember -Identity AppDeployStageNYCGS | Select-Object -Property Name

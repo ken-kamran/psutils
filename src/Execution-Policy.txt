@@ -1,0 +1,12 @@
+
+gpedit.msc ->  Computer Configuration>Administrative Templates > Windows Components > Windows PowerShell>“Turn on Script Execution”
+	set Enbaled with Options to "Allow All scripts"
+
+Set-ItemProperty -Path HKLM:\Software\Policies\Microsoft\Windows\PowerShell -Name ExecutionPolicy -Value ByPass
+
+
+
+
+#more info
+Get-executionPolicy -list
+

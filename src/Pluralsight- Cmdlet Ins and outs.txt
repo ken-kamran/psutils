@@ -1,0 +1,12 @@
+2 types: Cmdlets and PSCmdlets
+PS 2.0 with .NET 2.0, PS 3.0+ with .NET 4.0
+install nuget System.Management.Automation
+Inheriting from Cmdlet or PSCmdlet. Cmdlet is simple, easy to use, has smaller footprint, doesnt have powershell full features.
+PSCmdlet is bit complex, heavy footprint, provide full set of PS features
+Import-module .\MyCmdlet.dl  loads a module in ps. Remove-module removes it however PS still keeps lock on dll file
+$pshome = windows\system32\windowspoweshell\v1.0
+$profile, $profile.CurrentUserAllHosts
+use tick ` for line continuation
+just defining a function named prompt creates a custom prompt
+add powershell.exe and noprofile noexit in VS debug to start debugging PS in VS
+inherit from Cmdlet and decorate the class. [Cmdlet("SomeVerb", "SomeNoun")] or [Cmdlet(VerbsCommon.Get, "Somenoun")]

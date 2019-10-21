@@ -1,0 +1,4 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_Current_User\Software\Policies\Microsoft\Internet Explorer\Control Panel]
+"ConnectionsTab"=-""

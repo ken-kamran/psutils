@@ -1,0 +1,11 @@
+Add nuget reference to psake
+task NAME -depends DEPENDENCY1, DEPENDENCY2 {   }  any task is run at most once
+task default -depends DEPENDENCY  no action can be specified
+first import-module psake.psm1 and then Invoke-psake 
+invoke-psake without arg will run default task inside default.ps1
+remove-module [p]sake to remove all psake without throwing error
+gci find all psake.psm1 and import only the latest one
+properties { }  global variables to share among all tests
+can also pass in the properties valuess overriding the existing ones
+hash values in ps, -properties @{"a", "b", "c"}
+-description "some descriptoin"  adds documentation to sake scripts. use invoke-psake -docs to list all tasks (similar to rake -T)
